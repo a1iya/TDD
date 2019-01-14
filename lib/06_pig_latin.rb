@@ -5,4 +5,3 @@ if  /[aeiouy]/ =~ (word[0])
 end
 
 puts translate("apple")
-
