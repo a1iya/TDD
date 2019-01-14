@@ -14,4 +14,4 @@ end
 puts temperature_in_c(212)
 puts temperature_in_f(100)
 
-# .to use be_within ==> c'est test pour vérifier si 37°c est bien compris entre 0.1 et 98.6 fahrenheit
+# .to use be_within ==> c'est test pour vérifier si 37°c équivaut bien à 98.6 fahrenheit à 0.1 près
