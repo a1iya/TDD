@@ -32,16 +32,8 @@ end
 
 puts first_word("Hello World")
 puts first_word("oh dear")
-
-def title(a)
-    little_words = ["the", "and"]
-    if little_words
-        little_words.downcase
-        else a.split.map(&:capitalize).join(" ")
-    end
-end
-
-def titleize (title)  # aide de Claudia partonnau
+ 
+def titleize (title)  # aide de Claudia Partonnau
     phrase = title.split(" ").map.with_index do |word, index|
         if index == 0 || word.length > 3
             word.capitalize
@@ -51,11 +43,6 @@ def titleize (title)  # aide de Claudia partonnau
     end
     return phrase.join (" ")
 end
+puts titleize("jaws")
 puts titleize("war and peace")
-puts title("the bridge over the river kwai")
-
-=begin puts title("jaws")
-puts title("david copperfield")
-puts title("war and peace")
-=end
-puts title("the bridge over the river kwai")
+puts titleize("the bridge over the river kwai")
