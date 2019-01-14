@@ -3,7 +3,7 @@ def hello
 end
 
 def greet(name)
-    puts "#{hello}, #{name}!"
+    puts "#{hello}, #{name}!" # #{hello} ==> possibilité d'appeler une méthode ds une autre méthode
 end
 
 greet("Alice")

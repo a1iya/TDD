@@ -28,18 +28,18 @@ end
 puts multiply(3, 0)
 
 def power(a, b)
-a = a ** b
+a = a ** b   # ** ==> puissance ==> power
 end
 
 puts power(4, 2)
 
 def factorial(a)
-    if a < 0
+    if a < 0                # si 0 retourne nil
         return nil
     end
     value = 1
-    while a > 0
-        value = value * a
+    while a > 0             # tant que a sup à 0
+        value = value * a   # multiplie value par a jusqu'a ce que a <= 0
         a -= 1
     end
     return value

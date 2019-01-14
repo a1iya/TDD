@@ -21,20 +21,21 @@ puts repeat("hello ")
 
 def start
     s = 'hello'
-    s[0..2]
+    s[0..2]             # renvoi les caractères compris entre 0 et 2
 end
 
 puts start
 
 def first_word(a)
-a.split.first
+a.split.first             # .split ==> coupe .first ==> renvoi le premier mots
 end
 
 puts first_word("Hello World")
 puts first_word("oh dear")
- 
+
 def titleize (title)  # aide de Claudia Partonnau
     phrase = title.split(" ").map.with_index do |word, index|
+      # .map.with_index ==> va checker chaque lettres et défini 2 variables
         if index == 0 || word.length > 3
             word.capitalize
             else
